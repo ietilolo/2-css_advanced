@@ -10,6 +10,7 @@
 }
 body {
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* Variables */
@@ -154,8 +155,8 @@ menu li a {
   aside {
     position: fixed;
     background-color: #ff8000;
-    width: 50%;
-    right: -50%;
+    width: 30%;
+    right: -30%;
     transition: 1s all ease;
     border-bottom-left-radius: 10px;
   }

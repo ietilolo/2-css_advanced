@@ -13,6 +13,7 @@
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="section-styles.css">
 
 </head>
 
@@ -22,10 +23,9 @@
   <header>
     <h1>&#128247; PhotoGrid 2022 <span name="author" role="none">by Ieti</span></h1>
     <nav>
-      <li><a class="active" href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#" id="home">Home</a></li>
+      <li><a href="#" id="about">About</a></li>
+      <li><a href="#" id="contact">Contact</a></li>
     </nav>
   </header>
 
@@ -60,8 +60,31 @@
     </aside>
   </main>
 
+  <section id="about">
+    <button class="close">&#x2715</button>
+    <h1>About page</h1>
+    <span class="divider"></span>
+    <p>Hi, my names Ieti Lolo, I'm a asipiring Junior Web Developer and I've been building small websites/project for myself for over 4 years. I've built this photography website to showcase my current abilities to potential employers. If you'd like to learn more you can contact me direct on 022-376-5880 or contact me via the contact form. Thank you. This website has been hand coded by myself using HTML, CSS and some Pure JS</p>
+    <h2>Features</h2>
+    <ul>
+      <li>- Modal Navigation</li>
+      <li>- CSS Grid & Flexbox</li>
+      <li>- Dynamic Gallery</li>
+      <li>- Filter Component</li>
+      <li>- Mobile Responsive</li>
+    </ul>
+    <img src="./images/example-img.png" alt="">
+  </section>
+
+  <section id="contact">
+    <button class="close">&#x2715</button>
+    <h1>Contact page</h1>
+    <span class="divider"></span>
+  </section>
+
   <!-- Scripts -->
   <script src="./script.js"></script>
+  <script src="./navigation.js"></script>
 </body>
 
 </html>
