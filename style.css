@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif, Courier, monospace;
+}
+body {
+  min-height: 100vh;
+}
+
+/* Variables */
+:root {
+  
+}
+
+/* Header */
+header {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0px auto;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  overflow: visible;
+}
+header h1 {
+  font-size: 1.8rem;
+  position: relative;
+  display: inline-block;
+}
+header span[name="author"] {
+  width: 70px;
+  position: absolute;
+  top: 4px;
+  left: 310px;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+header h1, header a {
+  line-height: 80px;
+  padding: 0px 30px;
+}
+header nav {
+  display: flex;
+}
+nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  color: black;
+}
+a.active {
+  color: #ff8000;
+}
+main {
+  padding: 30px;
+  display: flex;
+}
+main h2 {
+  margin-bottom: 20px;
+}
+
+/* Gallery */
+#gallery {
+  width: 80%;
+}
+.photos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  align-items: start;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+img { width: 100%; height: 100%; }
+
+.photos-container img:first-child, .photos-container img:nth-child(8) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* Aside */
+aside {
+  width: 20%;
+  padding: 20px;
+}
+
+menu {
+  margin-top: 10px;
+}
+menu li {
+  margin-bottom: 10px;
+}
+menu li a {
+  font-size: .9rem;
+}
+.cog { display: none; }
+
+@media screen and (max-width: 800px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+  header {
+    align-items: center;
+  }
+  header h1 {
+    text-align: center;
+    position: relative;
+  }
+  header span[name="author"] {
+    font-size: .8rem;
+    position: absolute;
+    top: 5px;
+    left: 265px;
+  }
+  header a {
+    line-height: 40px;
+  }
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+  header h1, header a {
+    padding: 0px 10px;
+  }
+
+  main {
+    flex-direction: column;
+    position: relative;
+  }
+  #gallery {
+    width: 100%;
+  }
+  .photos-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    column-gap: 0px;
+    row-gap: 10px;
+  }
+  
+  aside {
+    position: fixed;
+    background-color: #ff8000;
+    width: 50%;
+    right: -50%;
+    transition: 1s all ease;
+  }
+  aside.active {
+    right: 0;
+  }
+  .cog {
+    display: inline-block;
+    width: 40px;
+    height: 60px;
+    background-color: #ff8000;
+    position: absolute;
+    left: -39px;
+    top: 0px;
+    text-align: center;
+    line-height:60px;
+    font-size: 2rem;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+  }
+  aside a.active {
+  color: white;
+}
+}

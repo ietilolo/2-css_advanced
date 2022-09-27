@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning CSS Flexbox & Grid</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- ===== HEADER =====  -->
+  <header>
+    <h1>&#128247; PhotoGrid 2022 <span name="author" role="none">by Ieti</span></h1>
+    <nav>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </nav>
+  </header>
+
+  <main>
+    <section id="gallery">
+      <h2>Recent Shots of <span class="filter-title">All</span></h2>
+      <div class="photos-container">
+        <img data-category="weddings" src="./images/1 jonathan-borba-eg-72fI9wK4-unsplash.jpg" alt="">
+        <img data-category="weddings" src="./images/2 victoria-priessnitz-pU_A9uhqcBU-unsplash.jpg" alt="">
+        <img data-category="nature" src="./images/4 oc-gonzalez-xg8z_KhSorQ-unsplash.jpg" alt="">
+        <img data-category="parties" src="./images/6 quino-al-mBQIfKlvowM-unsplash.jpg" alt="">
+        <img data-category="nature" src="./images/7 tim-swaan-eOpewngf68w-unsplash.jpg" alt="">
+        <img data-category="weddings" src="./images/8 samantha-gades-RHAtRIT3-CE-unsplash.jpg" alt="">
+        <img data-category="nature" src="./images/9 sabeer-darr-Upz-tnx2v2s-unsplash.jpg" alt="">
+        <img data-category="nature" src="./images/10 claudio-testa--SO3JtE3gZo-unsplash.jpg" alt="">
+        <img data-category="automobiles" src="./images/11 hakon-sataoen-qyfco1nfMtg-unsplash.jpg" alt="">
+        <img data-category="automobiles" src="./images/12 campbell-3ZUsNJhi_Ik-unsplash.jpg" alt="">
+        <img data-category="automobiles" src="./images/13 stefan-rodriguez-2AovfzYV3rc-unsplash.jpg" alt="">
+        <img data-category="parties" src="./images/14 adi-goldstein-Hli3R6LKibo-unsplash.jpg" alt="">
+      </div>
+    </section>
+    <aside>
+      <div class="cog">&#9881;</div>
+      <h4>Filter photos by :</h4>
+      <menu>
+        <li><a id="filterAll-btn" class="active" href="#">- All</a></li>
+        <li><a id="filterWeddings-btn" href="#">- Weddings</a></li>
+        <li><a id="filterAutomobiles-btn" href="#">- Automobiles</a></li>
+        <li><a id="filterNature-btn" href="#">- Nature</a></li>
+        <li><a id="filterParties-btn" href="#">- Parties</a></li>
+      </menu>
+    </aside>
+  </main>
+
+  <!-- Scripts -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
