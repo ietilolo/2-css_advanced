@@ -3,6 +3,7 @@ let d = document;
 let photos_container = d.querySelector(".photos-container");
 let filter_title = d.querySelector(".filter-title");
 let cog_btn = d.querySelector(".cog");
+let aside_elem = d.querySelector("aside");
 
 let photos_all = d.querySelectorAll(".photos-container img");
 let photos_weddings = d.querySelectorAll("img[data-category='weddings']");
@@ -65,5 +66,12 @@ function filterPhotos(param) {
 }
 
 cog_btn.addEventListener("click", () => {
-  d.querySelector("aside").classList.toggle("active");
+  aside_elem.classList.toggle("active");
 });
+window.addEventListener("click", (e) => {
+  if (aside_elem.classList.contains("active")) {
+    if (e.target !== cog_btn){
+      aside_elem.classList.toggle("active");
+    }
+  }
+})
