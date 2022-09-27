@@ -10,12 +10,15 @@ let contact_section = d.querySelector("section#contact");
 
 about_btn.addEventListener("click", () => {
   d.querySelector("body").classList.add("hide-overflow");
+  d.querySelector("html").classList.add("hide-overflow");
   about_btn.classList.add("active");
   about_section.classList.add("active");
 })
 
 contact_btn.addEventListener("click", () => {
   d.querySelector("body").classList.add("hide-overflow");
+  d.querySelector("html").classList.add("hide-overflow");
+
   contact_btn.classList.add("active");
   contact_section.classList.add("active");
 })
@@ -23,6 +26,7 @@ contact_btn.addEventListener("click", () => {
 d.querySelectorAll(".close").forEach(btn => {
   btn.addEventListener("click", () => {
     d.querySelector("body").classList.remove("hide-overflow");
+    d.querySelector("html").classList.remove("hide-overflow");
     about_section.classList.remove("active");
     about_btn.classList.remove("active");
     contact_section.classList.remove("active");

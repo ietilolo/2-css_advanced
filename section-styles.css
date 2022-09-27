@@ -63,3 +63,13 @@ section#about img {
   display: block;
   margin: 0px auto;
 }
+
+@media screen and (max-width: 800px) {
+  .hide-overflow {
+    overflow: hidden;
+  }
+  section#about, section#contact {
+    padding: 20px;
+    padding-top: 100px;
+  }
+}

@@ -8,7 +8,7 @@
   list-style-type: none;
   font-family: "Poppins", sans-serif, Courier, monospace;
 }
-body {
+body, html {
   min-height: 100vh;
   overflow-x: hidden;
 }
