@@ -154,6 +154,7 @@ menu li a {
     width: 50%;
     right: -50%;
     transition: 1s all ease;
+    border-bottom-left-radius: 10px;
   }
   aside.active {
     right: 0;
