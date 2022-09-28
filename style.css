@@ -155,8 +155,8 @@ menu li a {
   aside {
     position: fixed;
     background-color: #ff8000;
-    width: 35%;
-    right: -35%;
+    width: 40%;
+    right: -40%;
     transition: 1s all ease;
     border-bottom-left-radius: 10px;
   }
