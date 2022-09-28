@@ -156,7 +156,7 @@ menu li a {
     position: fixed;
     background-color: #ff8000;
     width: 35%;
-    right: -30%;
+    right: -35%;
     transition: 1s all ease;
     border-bottom-left-radius: 10px;
   }
